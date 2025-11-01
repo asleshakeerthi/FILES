@@ -1,12 +1,12 @@
-var multer=require("multer")
-var path=require("path")
-var storage=multer.diskStorage({
-    destination:function(req ,file,cd){
-        cd(null,"uploads/")
-    },
-    filename:function(req ,file,cd){
-        cd(null,file.filename +"-"+ Date.now() + path.extname(file.originalname))
-    }
+var multer = require("multer")
+var path = require("path")
+var storage = multer.diskStorage({
+  destination : function(req,file,cb){
+    cb(null,"upload/")
+  },
+  filename : function(req,file,cb){
+    cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname))
+  }
 })
-var upload=multer({storage})
-module.exports= upload
+var upload = multer({storage})
+module.exports = upload

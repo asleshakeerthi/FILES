@@ -1,12 +1,12 @@
 var mongoose=require("mongoose")
 var imageSchema=new mongoose.Schema({
     url:{
-        type:String,
-        require:true
+        type : String,
+        required : true
     },
     public_id:{
-        type:String,
-        require:true
+        type : String,
+        required : true
     }
 })
 module.exports=mongoose.model("image",imageSchema)

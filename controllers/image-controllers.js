@@ -17,3 +17,4 @@ var uploadImage=async(req,res)=>{
     res.status(501).json({message:"error"})
 }
 }
+module.exports=uploadImage
