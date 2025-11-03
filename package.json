@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/asleshakeerthi/FILES/issues"
   },
-  "homepage": "https://github.com/asleshakeerthi/FILES#readme"
+  "homepage": "https://github.com/asleshakeerthi/FILES#readme",
+  "devDependencies": {}
 }
